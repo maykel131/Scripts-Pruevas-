@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scalet=1">
+
+	<link rel="stylesheet" type="" href="">
+</head>
+
+  <body>
+   
+   <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+   <p id="segundo" > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+   <p id="tercero"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+
+   <ol id="lista">
+	   	<li id="primero1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</li>
+	   	<li id="segundo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</li>
+	   	<li id="tercero3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</li>
+		<li id="quarto4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</li>
+
+
+   </ol>
+
+
+  <script>
+  	/*como modificar texto de un elemento*/
+  	var elemento= document.getElementById("segundo2");
+  	elemento.innerHTML=" <b> hola pajuo </b> em ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar n";
+
+
+/*remplasar el elemento completo*/
+  	var nuevo= document.createElement("li"),
+  	    texto1 =document.createTextNode("Este es un nuevo elemento creado  para modificiar un elemento que ya esta realizado");
+
+  	    nuevo.appendChild(texto1);
+
+
+    // ahora accedemos al elemto padre
+    var padre= document.getElementsByTagName("li")[0].parentNode;
+    /*ahora podemos acceder a cualquier elemento padre y modificar*/
+       padre.replaceChild(nuevo,document.getElementsByTagName("li")[2]);
+    /* o entao tambem esta otra forma de remplanzar creando una variable auxiliar
+         var aux=document.getElementsByTagName("li")[2];
+         padre.replaceChild(nuevo,aux);
+    */
+
+  
+
+    /*para eleminar un elemento en este caso el elemento quarto4 */
+    padre.removeChild(document.getElementsByTagName("li")[3]);
+    padre.removeChild(document.get)
+    /* o entao
+     var aux2=document.getElementsByTagName("li")[3];
+     padre.removeChild(aux2);
+    */
+
+
+  </script>
+
+
+  </body>
+</html>
+
+
+
+

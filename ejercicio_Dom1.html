@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scalet=1">
+
+	<link rel="stylesheet" type="" href="">
+</head>
+
+  <body>
+    
+
+
+   <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+   <p id="segundo" > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+   <p id="tercero"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue in mi eu volutpat. In efficitur venenatis erat, non condimentum diam auctor in. Integer ullamcorper magna nunc, sed cursus leo pulvinar non. Quisque ut interdum lorem. Proin nec viverra dolor. Nunc a lobortis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+   <script>
+   	
+   	var elemenP = document.getElementsByTagName("p");
+   	var segundo = document.getElementById("segundo");
+
+   	/*paso 1 crear el elemento*/
+   	var elemento1= document.createElement("p");
+   	/*crear texto del elemento*/
+   	var tex =document.createTextNode("Dios es Rey");
+   	/*Meter el tex en el elemento*/
+   	elemento1.appendChild(tex);
+   	/* agregar atributos al elemento*/
+   	elemento1.setAttribute("align","center");
+   	/* agregar el elemento al documento html*/
+   	document.getElementById("segundo").appendChild(elemento1);
+  
+   </script>
+
+  </body>
+</html>
+
+
+
+

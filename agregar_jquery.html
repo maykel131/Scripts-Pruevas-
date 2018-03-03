@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scalet=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="" href="estilos.css">
+</head>
+
+  <body>
+
+  	     <label> DDD </label>
+                    <input type="text" name="dd" id="codi" value="" />
+                    
+                    <label> Numero </label>
+                    <td><input id="nume" type="text" name="numero" value="" /></td>
+                    
+ <!--                   <input type="button" name="" value="Adicionar" onclick="adi();">
+                    
+                    <input type="button" name="" value="Remover" onclick="restar();">
+                    
+                    <table class="table">
+                        <tr> 
+                            <td>DDD</td>
+                            <td>Numero</td>
+                            <td>Ações</td>
+                        </tr>
+                        <tr>
+                            <td><div id="dd">  </div> </td>
+                            <td><div id="num"> </div> </td>
+                            <td><div id="dele"> </div></td>
+                        </tr>
+                     </table> -->
+                    
+                    
+                    <button id="bot1"> Adicionar</button>
+                    <button id="bot2"> Apagar</button>
+                    
+                         <table class="table">
+                        <tr> 
+                            <td>DDD</td>
+                            <td>Numero</td>
+                        </tr>
+                        <tr>
+                            <td><ul id="ddd">  </ul> </td>
+                            <td><ul id="numer"> </ul> </td>
+                         
+                        </tr>
+                     </table>
+
+
+
+                     <script type="text/javascript">
+                     	    
+    var restar=function(){
+      
+      var borra1 = document.getElementById("dd");
+      borra1.removeChild(document.getElementById("dd"));
+      
+        var borra2 = document.getElementById("num");
+      borra2.remove(document.getElementById("num"));
+      
+    };
+   
+    
+    $(document).ready(function(){
+       
+        $("#bot1").click(function(){
+            $("#ddd").append("<li> nuevo </li>");
+        });
+        
+        
+    });
+    
+
+
+                     	
+                     </script>
+    
+  </body>
+</html>
+
+
+
+
